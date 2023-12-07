@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  background-color: rgb(241, 245, 241);
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global CSS to style checkboxes */
+input[type="checkbox"] {
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* Remove default appearance for WebKit browsers */
+  -moz-appearance: none; /* Remove default appearance for Mozilla browsers */
+  width: 16px; /* Set width of the checkbox */
+  height: 16px; /* Set height of the checkbox */
+  border: 2px solid #777f84; /* Set border color */
+  border-radius: 3px; /* Set border radius */
+  outline: none; /* Remove outline */
+  transition: background-color 0.3s; /* Add transition for background color */
+}
+
+/* Style the checkbox when checked */
+input[type="checkbox"]:checked {
+  background-color: rgb(57, 52, 219); /* Set background color when checked */
+  border-color: #3498db; /* Set border color when checked */
+}
